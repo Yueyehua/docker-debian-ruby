@@ -42,7 +42,7 @@ RUN \
 RUN \
   /root/.rbenv/shims/gem install \
     -q --no-rdoc --no-ri --no-format-executable --no-user-install \
-    rubocop yaml-lint;
+    rubocop yaml-lint bundler;
 
 VOLUME ["/sys/fs/cgroup"]
 CMD  ["/lib/systemd/systemd"]
