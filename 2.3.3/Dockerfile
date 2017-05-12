@@ -38,5 +38,11 @@ RUN \
     https://github.com/rbenv/rbenv-installer/raw/master/bin/rbenv-installer | \
     bash
 
+# Install few gems
+RUN \
+  /root/.rbenv/shims/gem install \
+    -q --no-rdoc --no-ri --no-format-executable --no-user-install \
+    rubocop yaml-lint bundler rspec;
+
 VOLUME ["/sys/fs/cgroup"]
 CMD  ["/lib/systemd/systemd"]
