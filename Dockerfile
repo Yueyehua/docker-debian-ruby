@@ -12,7 +12,7 @@ RUN \
 # Install ruby and dependencies
 RUN \
   apt-get -qq -y install gcc git-core build-essential libffi-dev libssl-dev \
-    libcurl4-openssl-dev libreadline-dev ruby;
+    libcurl4-openssl-dev libreadline-dev ruby ruby-dev;
 
 # Clean all
 RUN \
