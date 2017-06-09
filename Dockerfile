@@ -22,7 +22,7 @@ RUN \
 RUN \
   gem install \
     -q --no-rdoc --no-ri --no-format-executable --no-user-install \
-    rubocop yaml-lint bundler rspec;
+    rake rubocop yaml-lint bundler rspec;
 
 VOLUME ["/sys/fs/cgroup"]
 CMD  ["/bin/bash"]
