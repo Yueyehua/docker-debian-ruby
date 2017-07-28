@@ -1,4 +1,4 @@
-FROM yueyehua/debian-base
+FROM yueyehua/debian-base:8
 MAINTAINER Richard Delaplace "rdelaplace@yueyehua.net"
 LABEL version="1.0.0"
 
